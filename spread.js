@@ -34,7 +34,18 @@ console.log(arr2);  // reference same thakar karone duitatei 4 add hobe, referen
 
 //right way to copy array with spread operator
 const array3 = [2,4,5];
-const array4 = [...array3];
+const array4 = [...array3, 56];  // reference alada thakar karone duitatei 4 add hobe na, reference alada mane dui ta ak e jaiga ba box a ase na, tai j dik thekei value asuk na keno ak tatei change hobe
 array4.push(9);
-console.log(array3);
-console.log(array4);
+// console.log(array3);
+// console.log(array4);
+
+//wrong concept copy object with spread operator
+const employer = {
+    name: 'salaat sona',
+    age: 20,
+    salary: 100000,
+}
+const employer2 = employer;
+employer.salary = 120000;
+console.log(employer);
+console.log(employer2);
