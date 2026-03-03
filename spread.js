@@ -31,3 +31,10 @@ const arr2 = arr1;
 arr2.push(5);
 console.log(arr1);  
 console.log(arr2);  // reference same thakar karone duitatei 4 add hobe, reference same mane dui ta ak e jaiga ba box a ase, tai j dik thekei value asuk na keno dui tatei change hobe
+
+//right way to copy array with spread operator
+const array3 = [2,4,5];
+const array4 = [...array3];
+array4.push(9);
+console.log(array3);
+console.log(array4);
