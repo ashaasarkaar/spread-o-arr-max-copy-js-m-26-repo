@@ -1,3 +1,4 @@
+
 //min + max function built in
 const max = Math.max(1, 5, 7, 8,10);   // buit-in max function
 // console.log(max);
@@ -47,5 +48,16 @@ const employer = {
 }
 const employer2 = employer;
 employer.salary = 120000;
-console.log(employer);
-console.log(employer2);
+// console.log(employer);
+// console.log(employer2);
+
+////wright concept copy object with spread operator
+
+const mother = {
+    name: 'salaat',
+    ChildrenName1: 'Rijik',
+}
+const mother2 = {...mother, motherQuality: "Very honest & good"};
+mother2.ChildrenName1 = 'Umeed';
+console.log(mother);
+console.log(mother2);
